@@ -2561,6 +2561,24 @@ var _metaAttrs = {
     },
     newKey: 'updatedAt'
   },
+  _ownerID: {
+    parser: function parser(v) {
+      return v;
+    },
+    newKey: 'ownerID'
+  },
+  _created_by: { //eslint-disable-line
+    parser: function parser(v) {
+      return v;
+    },
+    newKey: 'createdBy'
+  },
+  _updated_by: { //eslint-disable-line
+    parser: function parser(v) {
+      return v;
+    },
+    newKey: 'updatedBy'
+  },
   _access: {
     parser: function parser(v) {
       return _acl2['default'].fromJSON(v);
